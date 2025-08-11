@@ -4,6 +4,18 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 
+# Inject CSS for background gradient
+st.markdown("""
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+        /* You can customize the colors and direction */
+        background-attachment: fixed;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 # Load CSS styles
 def local_css(file_name):
     with open(file_name) as f:
