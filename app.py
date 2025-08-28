@@ -8,8 +8,7 @@ import pandas as pd
 st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
-        /* You can customize the colors and direction */
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark to light blue gradient */
         background-attachment: fixed;
     }
     </style>
@@ -64,6 +63,7 @@ def main():
 
         # Predict
         prediction = model.predict(img_array)
+        st.write("🔍 Raw prediction scores:", prediction)  # Debug info
         class_idx = np.argmax(prediction, axis=1)[0]
 
         # Safeguard index in case CSV and model mismatch

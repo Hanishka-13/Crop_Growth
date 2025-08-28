@@ -9,11 +9,13 @@ h1 {
 }
 
 .upload-section {
-    background-color: #e0f7fa;
+    background-color: #1c1c3c;  /* Dark background */
+    color: #ffffff;             /* Light text for visibility */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 .result-section {
