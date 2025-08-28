@@ -1,26 +1,53 @@
 body {
-    background-color: #f0f2f6;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Dark blue → red → golden gradient */
+    background-attachment: fixed;
     font-family: 'Arial', sans-serif;
+    color: #fff; /* Default text color white for contrast */
 }
 
+/* Main Title */
 h1 {
-    color: #2a9d8f;
+    color: #ffdd00; /* Golden color */
     text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
+/* Upload Section Box */
 .upload-section {
-    background-color: #1c1c3c;  /* Dark background */
-    color: #ffffff;             /* Light text for visibility */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark blue gradient */
+    color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
+/* Result Section Box */
 .result-section {
-    background-color: #a7c7e7;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Light blue gradient */
+    color: #1a1a1a;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-top: 20px;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.result-section:hover {
+    transform: scale(1.02);
+}
+
+/* Center images */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
 }
