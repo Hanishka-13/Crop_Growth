@@ -25,10 +25,14 @@ def local_css(file_name):
 def load_model():
     try:
         model = tf.keras.models.load_model('model.h5')
+        st.success("✅ Kaggle-trained model.h5 loaded successfully!")
+        # Show model summary in Streamlit (for verification)
+        model.summary(print_fn=lambda x: st.text(x))
         return model
     except Exception as e:
-        st.error(f"Error loading model: {e}")
+        st.error(f"❌ Error loading model: {e}")
         return None
+
 
 # Load dataset info
 @st.cache_data

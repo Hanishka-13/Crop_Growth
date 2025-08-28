@@ -10,5 +10,6 @@ model = Sequential([
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-model.save('model.h5')
-print("Dummy model saved as model.h5")
+# Save dummy model with a different name
+model.save('dummy_model.h5')
+print("Dummy model saved as dummy_model.h5")
